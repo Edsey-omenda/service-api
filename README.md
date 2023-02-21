@@ -8,13 +8,14 @@ The system has two main models that form one to many relationship:
 *  A customer has many accounts.
 *  A customer has multiple credit/debit card numbers.
 *  A customer can be created with specific attrubutes and related to an account that solely belongs to that customer.
-*  Live link for customer route is: /customers
+*  Live link for customer route is: https://service-api.onrender.com/customers
 
 ## Account.
 *  An account belongs to a customer.
 *  An account can be created and is related to a customer(new or existing one)
 *  Account can be topped up  and withrawal made via the amount attribute.(OPeration managed by the updated method in the account controller).
-* Live link for account routes is: /accounts
+* Live link for account routes is: https://service-api.onrender.com/accounts
+
 
 
 ## Technologies used
