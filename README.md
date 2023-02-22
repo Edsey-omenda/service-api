@@ -33,7 +33,7 @@ id	integer	Required. Id of item to fetch
 #### Creating a Customer
   POST /https://service-api.onrender.com/customers/
 
-Parameter	       Type	         |  Description
+|Parameter	     | Type	         |  Description                  |
 | :--------      | :-------      | :-----------------------------|
 |name            |  String.      |  Name of the customer.        |
 |account_type    |  String.      |  Type of customer account.    |
@@ -47,7 +47,7 @@ Parameter	       Type	         |  Description
 #### Creating a Customer
   POST /https://service-api.onrender.com/accounts/
 
-Parameter	       Type	         |  Description
+|Parameter	     | Type	         |  Description                           |
 | :--------      | :-------      | :--------------------------------------|
 |customer_id     |  integr.      | Id of the customer relating toaccount. |
 |account_name    |  String.      | Name of customer account.              |
