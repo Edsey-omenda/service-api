@@ -1,6 +1,6 @@
 # Microservice system
 
-## This is a RESTFUL microservice program that will perform database operation to create CUSTOMER and create customer ACCOUNT.
+##
 
 The system has two main models that form one to many relationship:
 
@@ -13,8 +13,51 @@ The system has two main models that form one to many relationship:
 ## Account.
 *  An account belongs to a customer.
 *  An account can be created and is related to a customer(new or existing one)
-*  Account can be topped up  and withrawal made via the amount attribute.(OPeration managed by the updated method in the account controller).
+*  Account can be topped up  and withrawal made via the amount attribute.(Operation managed by the update method in the account controller).
 * Live link for account routes is: https://service-api.onrender.com/accounts
+
+## API Reference
+### Get all /customers
+  GET /https://service-api.onrender.com/customers
+### Get customers/:id
+  GET /https://service-api.onrender.com/customers/${id}
+Parameter	Type	Description
+id	integer	Required. Id of item to fetch
+### Get all /accounts
+  GET /https://service-api.onrender.com/accounts
+### Get accounts/:id
+  GET /https://service-api.onrender.com/accounts/${id}
+Parameter	Type	Description
+id	integer	Required. Id of item to fetch
+### Post customers/
+#### Creating a Customer
+  POST /https://service-api.onrender.com/customers/
+Parameter	       Type	             Description
+name               Required          Name of the customer.
+account_type       Required.         Type of customer account.
+account_number.    Required.         Customer account number.
+email              Required.         Customer email.
+age                Required.         Customer age.
+contact            Required.         Customer contact number.
+
+### Post accounts/
+#### Creating a Customer
+  POST /https://service-api.onrender.com/accounts/
+Parameter	       Type	             Description
+customer_id        Required.         Id of the customer relating to account.
+account_name       Required.         Name of customer account.
+account_number.    Required.         Customer account number.
+debit_Cnumber      Required.         Account debit card number.
+credit_Cnumber     Required.         Account credit card number.
+account_type       Required.         Type of customer account.
+amount             Required.         Amount of money inside the account.
+
+
+### Updating accounts/
+#### UPdating account
+  PATCH/PUT /https://service-api.onrender.com/accounts/
+Parameter	       Type	             Description
+amount             Required.         Amount of money inside the account.
 
 
 
