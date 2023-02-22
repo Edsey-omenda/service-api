@@ -32,32 +32,40 @@ id	integer	Required. Id of item to fetch
 ### Post customers/
 #### Creating a Customer
   POST /https://service-api.onrender.com/customers/
-Parameter	       Type	             Description
-name               Required          Name of the customer.
-account_type       Required.         Type of customer account.
-account_number.    Required.         Customer account number.
-email              Required.         Customer email.
-age                Required.         Customer age.
-contact            Required.         Customer contact number.
+
+Parameter	       Type	         |  Description
+| :--------      | :-------      | :-----------------------------|
+|name            |  String.      |  Name of the customer.        |
+|account_type    |  String.      |  Type of customer account.    |
+|account_number. |  String.      |  Customer account number.     |
+|email           |  String.      |  Customer email.              |
+|age             |  integr.      |  Customer age.                |
+|contact         |  integer.     |  Customer contact number.     |
+
 
 ### Post accounts/
 #### Creating a Customer
   POST /https://service-api.onrender.com/accounts/
-Parameter	       Type	             Description
-customer_id        Required.         Id of the customer relating to account.
-account_name       Required.         Name of customer account.
-account_number.    Required.         Customer account number.
-debit_Cnumber      Required.         Account debit card number.
-credit_Cnumber     Required.         Account credit card number.
-account_type       Required.         Type of customer account.
-amount             Required.         Amount of money inside the account.
+
+Parameter	       Type	         |  Description
+| :--------      | :-------      | :--------------------------------------|
+|customer_id     |  integr.      | Id of the customer relating toaccount. |
+|account_name    |  String.      | Name of customer account.              |
+|account_number. |  integr.      | Customer account number.               |
+|debit_Cnumber   |  integr.      | Account debit card number.             |
+|credit_Cnumber  |  integr.      | Account credit card number.            |
+|account_type    |  integer.     | Type of customer account.              |
+|amount          |  integer.     | Amount of money inside the account.    |
+
 
 
 ### Updating accounts/
 #### UPdating account
   PATCH/PUT /https://service-api.onrender.com/accounts/
-Parameter	       Type	             Description
-amount             Required.         Amount of money inside the account.
+
+| Parameter | Type     | Description                         |
+| :-------- | :------- | :-----------------------------------|
+| amount    | `integer`| Amount of money inside the account. |
 
 
 
