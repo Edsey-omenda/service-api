@@ -39,7 +39,7 @@ id	integer	Required. Id of item to fetch
 |account_type    |  String.      |  Type of customer account.    |
 |account_number. |  String.      |  Customer account number.     |
 |email           |  String.      |  Customer email.              |
-|age             |  integr.      |  Customer age.                |
+|age             |  integer.      |  Customer age.                |
 |contact         |  integer.     |  Customer contact number.     |
 
 
@@ -49,11 +49,11 @@ id	integer	Required. Id of item to fetch
 
 |Parameter	     | Type	         |  Description                           |
 | :--------      | :-------      | :--------------------------------------|
-|customer_id     |  integr.      | Id of the customer relating toaccount. |
+|customer_id     |  integer.      | Id of the customer relating toaccount. |
 |account_name    |  String.      | Name of customer account.              |
-|account_number. |  integr.      | Customer account number.               |
-|debit_Cnumber   |  integr.      | Account debit card number.             |
-|credit_Cnumber  |  integr.      | Account credit card number.            |
+|account_number. |  integer.      | Customer account number.               |
+|debit_Cnumber   |  integer.      | Account debit card number.             |
+|credit_Cnumber  |  integer.      | Account credit card number.            |
 |account_type    |  integer.     | Type of customer account.              |
 |amount          |  integer.     | Amount of money inside the account.    |
 
@@ -61,7 +61,7 @@ id	integer	Required. Id of item to fetch
 
 ### Updating accounts/
 #### UPdating account
-  PATCH/PUT /https://service-api.onrender.com/accounts/
+  PATCH/PUT /https://service-api.onrender.com/accounts/${id}
 
 | Parameter | Type     | Description                         |
 | :-------- | :------- | :-----------------------------------|
