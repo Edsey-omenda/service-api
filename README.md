@@ -44,7 +44,7 @@ id	integer	Required. Id of item to fetch
 
 
 ### Post accounts/
-#### Creating a Customer
+#### Creating an account for a specific customer.
   POST /https://service-api.onrender.com/accounts/
 
 |Parameter	     | Type	         |  Description                           |
